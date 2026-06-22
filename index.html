@@ -94,7 +94,7 @@
       min-height: 100vh;
       background:
         linear-gradient(135deg, rgba(26,39,68,.93) 0%, rgba(14,29,58,.90) 55%, rgba(17,34,64,.93) 100%),
-        url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80') center / cover no-repeat;
+        url('hero-roller-poster.jpg') center / cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -157,6 +157,21 @@
       -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 27.27%, #000 100%);
       mask-image: linear-gradient(to right, transparent 0%, #000 27.27%, #000 100%);
     }
+    /* single full-bleed video for mobile — swapped in place of the triptych, which doesn't read well on narrow screens */
+    .hero-video-mobile {
+      display: none;
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .hero-video-mobile video {
+      display: block;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: 30% center;
+    }
     .hero-video-overlay {
       position: absolute;
       top: 0; left: 0;
@@ -173,7 +188,12 @@
       pointer-events: none;
     }
     @media (prefers-reduced-motion: reduce) {
-      .hero-video-grid, .hero-video-overlay, .hero-content-vignette { display: none; }
+      .hero-video-grid, .hero-video-mobile, .hero-video-overlay, .hero-content-vignette { display: none; }
+    }
+    /* mobile: swap the 3-column triptych for a single full-bleed video — the masked columns read as cramped/cropped on narrow screens */
+    @media (max-width: 768px) {
+      .hero-video-grid { display: none; }
+      .hero-video-mobile { display: block; }
     }
 
     .hero-inner { position: relative; z-index: 2; max-width: 800px; }
@@ -615,6 +635,11 @@
         <source src="hero-facade.mp4" type="video/mp4">
       </video>
     </div>
+  </div>
+  <div class="hero-video-mobile">
+    <video autoplay muted loop playsinline poster="hero-roller-poster.jpg">
+      <source src="hero-roller.mp4" type="video/mp4">
+    </video>
   </div>
   <div class="hero-video-overlay"></div>
   <div class="hero-content-vignette"></div>
