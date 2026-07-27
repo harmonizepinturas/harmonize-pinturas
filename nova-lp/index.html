@@ -28,7 +28,7 @@ header{position:sticky;top:0;z-index:100;background:#ffffffee;backdrop-filter:bl
 .logo-text{display:flex;flex-direction:column;}
 .logo span{font-size:12px;letter-spacing:3px;color:var(--teal);font-weight:600;}
 nav ul{display:flex;gap:28px;}
-nav ul li a{font-size:15px;font-weight:600;color:var(--navy);}
+nav ul li a{font-size:13px;font-weight:600;color:var(--navy);text-transform:uppercase;letter-spacing:.5px;}
 nav ul li a:hover{color:var(--teal);}
 .btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:700;font-size:14px;transition:.2s;}
 .btn-primary{background:var(--gold);color:#1a1a1a;}
@@ -111,7 +111,7 @@ footer h3{color:#fff;margin-bottom:8px;}
 .hero-text{position:relative;z-index:3;max-width:600px;padding:70px 0 60px;}
 .hero-features{display:flex;gap:26px;flex-wrap:wrap;}
 .hero-feature{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--navy);}
-.hf-icon{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:rgba(42,157,143,.15);color:var(--teal);font-weight:900;flex-shrink:0;}
+.hf-icon{width:20px;height:20px;color:var(--teal);flex-shrink:0;}
 .servicos-strip{background:var(--navy);padding:50px 0;}
 .ss-title{color:#fff;text-align:center;font-size:22px;letter-spacing:1px;text-transform:uppercase;margin-bottom:36px;font-weight:700;}
 .ss-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;}
@@ -130,55 +130,55 @@ footer h3{color:#fff;margin-bottom:8px;}
   <div class="nav-wrap">
     <div class="logo"><img src="logo-icon.png" alt="Logomarca Harmonize Pinturas" class="logo-img"><div class="logo-text">Harmonize<span>PINTURAS</span></div></div>
     <nav><ul id="navList">
-      <li><a href="#inicio">Início</a></li>
       <li><a href="#servicos">Serviços</a></li>
-      <li><a href="#diferenciais">Diferenciais</a></li>
-      <li><a href="#como-funciona">Como Funciona</a></li>
-      <li><a href="#atendimento">Área de Atendimento</a></li>
-      <li><a href="#contato">Contato</a></li>
+      <li><a href="#diferenciais">Vantagens</a></li>
+      <li><a href="#cases">Cases</a></li>
+      <li><a href="#contato">Sobre</a></li>
     </ul></nav>
-    <a class="btn btn-primary" href="https://wa.me/5548985069328" target="_blank" rel="noopener">Falar com a Harmonize</a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">&#9776;</button>
+    <a class="btn btn-primary" href="https://wa.me/5548985069328" target="_blank" rel="noopener">Orçamento</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">&#9776;</button>
   </div>
 </header>
 
 <section class="hero" id="inicio">
-  <div class="hero-photo-wrap"><img src="hero-main.jpg" alt="Equipe Harmonize Pinturas realizando pintura predial em fachada"></div>
+  <div class="hero-photo-wrap"><img src="hero-main.jpg" alt="Pintor da Harmonize Pinturas realizando pintura predial em fachada"></div>
   <div class="hero-corner">
     <div class="hero-corner-text">
       <span>Atendemos:</span>
-      <p>Balneário Camboriú | Itapema | Camboriú | Porto Belo | Navegantes e região</p>
+      Balneário Camboriú | Itapema | Camboriú | Porto Belo | Navegantes e região
     </div>
   </div>
   <div class="container">
     <div class="hero-text">
-      <div class="eyebrow">PINTURA PREDIAL PARA CONDOMÍNIOS</div>
-      <h1>Pintura predial interna e externa: tratamento de patologias, proteção da estrutura e renovação estética para o seu condomínio</h1>
-      <p class="loc">Atendimento para síndicos e administradoras em Balneário Camboriú, Itapema, Camboriú e região. Orçamento gratuito e sem compromisso.</p>
+      <div class="eyebrow">Pintura Predial, Comercial e Residencial</div>
+      <h1>Mais que pintura, <span style="color:var(--teal)">valorização</span>.</h1>
+      <p class="loc">Revitalizamos fachadas e ambientes com qualidade, segurança e acabamento impecável.</p>
       <div class="hero-ctas">
-        <a class="btn btn-primary" href="https://wa.me/5548985069328" target="_blank" rel="noopener">Solicitar Orçamento para o Condomínio</a>
-        <a class="btn btn-outline" href="#servicos" style="color:#16233f;border-color:#16233f;">Ver Serviços Prediais</a>
+        <a class="btn btn-primary" href="https://wa.me/5548985069328" target="_blank" rel="noopener">Solicitar Orçamento Gratuito
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-3px;margin-left:6px"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8 1-.2.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.2-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.4.1-.2 0-.3 0-.4-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.4 3.8 3.4.5.2.9.4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.3-.5 1.5-1 .2-.5.2-.9.1-1-.1-.1-.2-.2-.4-.3z"></path></svg>
+        </a>
       </div>
       <div class="hero-features">
-        <div class="hero-feature"><span class="hf-icon">&#10003;</span>Planejamento da Obra</div>
-        <div class="hero-feature"><span class="hf-icon">&#10003;</span>Preparação Adequada</div>
-        <div class="hero-feature"><span class="hf-icon">&#10003;</span>Orçamento Transparente</div>
+        <div class="hero-feature"><svg class="hf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z"></path><path d="M9 12l2 2 4-4"></path></svg>Segurança em primeiro lugar</div>
+        <div class="hero-feature"><svg class="hf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="5"></circle><path d="M9 12.5L7 21l5-3 5 3-2-8.5"></path></svg>Acabamento de qualidade</div>
+        <div class="hero-feature"><svg class="hf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l4 2"></path></svg>Compromisso com prazos</div>
       </div>
     </div>
   </div>
 </section>
-
 <section class="servicos-strip">
   <div class="container">
     <h2 class="ss-title">Nossos Serviços</h2>
     <div class="ss-grid">
-      <div class="ss-item"><svg class="ss-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="1"></rect><path d="M9 8h1M14 8h1M9 12h1M14 12h1M9 16h1M14 16h1"></path></svg><span>Fachadas e Condomínios</span></div>
-      <div class="ss-item"><svg class="ss-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z"></path></svg><span>Hidrojateamento e Impermeabilização</span></div>
-      <div class="ss-item"><svg class="ss-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"></path><path d="M9 12l2 2 4-4"></path></svg><span>Tratamento de Patologias</span></div>
+      <div class="ss-item"><svg class="ss-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="1"></rect><path d="M9 8h1M14 8h1M9 12h1M14 12h1M9 16h1M14 16h1"></path></svg><span>Pintura Predial</span></div>
+      <div class="ss-item"><svg class="ss-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l1-5h16l1 5"></path><path d="M4 9v10a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V9"></path><path d="M9 20v-6h6v6"></path><path d="M3 9h18"></path></svg><span>Pintura Comercial</span></div>
+      <div class="ss-item"><svg class="ss-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 11l8-7 8 7"></path><path d="M6 10v10h12V10"></path><path d="M10 20v-6h4v6"></path></svg><span>Pintura Residencial</span></div>
+      <div class="ss-item"><svg class="ss-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z"></path></svg><span>Hidrojateamento</span></div>
+      <div class="ss-item"><svg class="ss-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="1"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="14" x2="21" y2="14"></line><line x1="8" y1="4" x2="8" y2="9"></line><line x1="14" y1="4" x2="14" y2="9"></line><line x1="11" y1="9" x2="11" y2="14"></line><line x1="17" y1="9" x2="17" y2="14"></line><line x1="8" y1="14" x2="8" y2="20"></line><line x1="14" y1="14" x2="14" y2="20"></line></svg><span>Recuperação de Fachadas</span></div>
+      <div class="ss-item"><svg class="ss-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="12" height="6" rx="1"></rect><line x1="15" y1="8" x2="19" y2="8"></line><line x1="19" y1="8" x2="19" y2="16"></line><line x1="19" y1="16" x2="16" y2="16"></line><line x1="16" y1="16" x2="16" y2="19"></line></svg><span>Texturas e Revestimentos</span></div>
     </div>
   </div>
 </section>
-
 <section id="servicos">
   <div class="container">
     <div class="eyebrow">SERVIÇOS PARA CONDOMÍNIOS</div>
