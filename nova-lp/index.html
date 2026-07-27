@@ -36,12 +36,12 @@ nav ul li a:hover{color:var(--teal);}
 .btn-outline{background:transparent;border:2px solid var(--teal);color:var(--teal);}
 .btn-teal{background:var(--teal);color:#fff;}
 .menu-toggle{display:none;font-size:26px;background:none;border:none;color:var(--navy);cursor:pointer;}
-.hero{background:linear-gradient(135deg,#16233f 0%,#1a2744 45%,#0e1d3a 100%);color:#fff;padding:70px 0 90px;}
+.hero{position:relative;background:#fff;color:var(--navy);overflow:hidden;}
 .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;}
 .badge-pill{display:inline-block;background:rgba(42,157,143,.18);border:1px solid rgba(42,157,143,.5);color:#bfe9e2;padding:8px 16px;border-radius:30px;font-size:13px;font-weight:600;margin-bottom:20px;}
 .hero h1{font-size:36px;line-height:1.3;margin-bottom:18px;}
-.hero p.loc{color:#c8cedb;margin-bottom:28px;font-size:15px;}
-.hero-ctas{display:flex;gap:16px;flex-wrap:wrap;}
+.hero p.loc{color:var(--muted);margin-bottom:28px;font-size:15px;}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:32px;}
 .hero-img-ph{aspect-ratio:4/5;background:rgba(255,255,255,.06);border:2px dashed rgba(255,255,255,.25);color:#cfd6e2;}
 section{padding:80px 0;}
 .eyebrow{color:var(--gold);font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;}
@@ -102,6 +102,27 @@ footer h3{color:#fff;margin-bottom:8px;}
   .cases-grid{grid-template-columns:1fr;}
   .proc-grid{grid-template-columns:repeat(2,1fr);}
 }
+
+.hero-photo-wrap{position:absolute;top:0;right:0;bottom:0;width:56%;clip-path:polygon(22% 0,100% 0,100% 100%,0% 100%);z-index:1;}
+.hero-photo-wrap img{width:100%;height:100%;object-fit:cover;}
+.hero-corner{position:absolute;right:0;bottom:0;width:40%;height:34%;background:linear-gradient(135deg,#16233f 0%,#0e1d3a 100%);clip-path:polygon(100% 0,100% 100%,0 100%);border-top:3px solid var(--gold);z-index:2;}
+.hero-corner-text{position:absolute;right:28px;bottom:22px;color:#fff;text-align:right;font-size:13px;z-index:3;max-width:260px;line-height:1.5;}
+.hero-corner-text span{display:block;color:var(--gold);font-weight:700;margin-bottom:4px;text-transform:uppercase;font-size:12px;letter-spacing:1px;}
+.hero-text{position:relative;z-index:3;max-width:600px;padding:70px 0 60px;}
+.hero-features{display:flex;gap:26px;flex-wrap:wrap;}
+.hero-feature{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--navy);}
+.hf-icon{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:rgba(42,157,143,.15);color:var(--teal);font-weight:900;flex-shrink:0;}
+.servicos-strip{background:var(--navy);padding:50px 0;}
+.ss-title{color:#fff;text-align:center;font-size:22px;letter-spacing:1px;text-transform:uppercase;margin-bottom:36px;font-weight:700;}
+.ss-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;}
+.ss-item{flex:1;min-width:160px;display:flex;flex-direction:column;align-items:center;gap:12px;color:#dfe4ee;text-align:center;font-size:14px;font-weight:600;}
+.ss-icon{width:44px;height:44px;color:var(--teal);}
+@media(max-width:900px){
+  .hero-photo-wrap{position:relative;width:100%;height:260px;clip-path:none;}
+  .hero-corner{display:none;}
+  .hero-text{padding:30px 0;max-width:100%;}
+  .ss-grid{flex-direction:column;align-items:center;}
+}
 </style>
 </head>
 <body>
@@ -122,16 +143,39 @@ footer h3{color:#fff;margin-bottom:8px;}
 </header>
 
 <section class="hero" id="inicio">
-  <div class="container hero-grid">
-    <div>
-            <h1>Pintura predial interna e externa: tratamento de patologias, proteção da estrutura e renovação estética para o seu condomínio</h1>
+  <div class="hero-photo-wrap"><img src="hero-main.jpg" alt="Equipe Harmonize Pinturas realizando pintura predial em fachada"></div>
+  <div class="hero-corner">
+    <div class="hero-corner-text">
+      <span>Atendemos:</span>
+      <p>Balneário Camboriú | Itapema | Camboriú | Porto Belo | Navegantes e região</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="hero-text">
+      <div class="eyebrow">PINTURA PREDIAL PARA CONDOMÍNIOS</div>
+      <h1>Pintura predial interna e externa: tratamento de patologias, proteção da estrutura e renovação estética para o seu condomínio</h1>
       <p class="loc">Atendimento para síndicos e administradoras em Balneário Camboriú, Itapema, Camboriú e região. Orçamento gratuito e sem compromisso.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="https://wa.me/5548985069328" target="_blank" rel="noopener">Solicitar Orçamento para o Condomínio</a>
-        <a class="btn btn-outline" href="#servicos" style="color:#fff;border-color:#fff;">Ver Serviços Prediais</a>
+        <a class="btn btn-outline" href="#servicos" style="color:#16233f;border-color:#16233f;">Ver Serviços Prediais</a>
+      </div>
+      <div class="hero-features">
+        <div class="hero-feature"><span class="hf-icon">&#10003;</span>Planejamento da Obra</div>
+        <div class="hero-feature"><span class="hf-icon">&#10003;</span>Preparação Adequada</div>
+        <div class="hero-feature"><span class="hf-icon">&#10003;</span>Orçamento Transparente</div>
       </div>
     </div>
-            <div class="hero-img-ph" style="padding:0;overflow:hidden;background:none;border:none;"><img src="hero-main.jpg" alt="Equipe Harmonize Pinturas realizando pintura predial em fachada" style="width:100%;height:100%;object-fit:cover;border-radius:10px;"></div>
+  </div>
+</section>
+
+<section class="servicos-strip">
+  <div class="container">
+    <h2 class="ss-title">Nossos Serviços</h2>
+    <div class="ss-grid">
+      <div class="ss-item"><svg class="ss-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="1"></rect><path d="M9 8h1M14 8h1M9 12h1M14 12h1M9 16h1M14 16h1"></path></svg><span>Fachadas e Condomínios</span></div>
+      <div class="ss-item"><svg class="ss-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z"></path></svg><span>Hidrojateamento e Impermeabilização</span></div>
+      <div class="ss-item"><svg class="ss-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"></path><path d="M9 12l2 2 4-4"></path></svg><span>Tratamento de Patologias</span></div>
+    </div>
   </div>
 </section>
 
