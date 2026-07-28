@@ -28,7 +28,7 @@ header{position:sticky;top:0;z-index:100;background:transparent;}
 .logo-text{display:flex;flex-direction:column;}
 .logo span{font-size:12px;letter-spacing:3px;color:var(--teal);font-weight:600;}
 nav ul{display:flex;gap:28px;}
-nav ul li a{font-size:13px;font-weight:600;color:#fff;text-transform:uppercase;letter-spacing:.5px;}
+nav ul li a{font-size:15px;font-weight:600;color:#fff;text-transform:uppercase;letter-spacing:.5px;}
 nav ul li a:hover{color:var(--teal);}
 .btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:700;font-size:14px;transition:.2s;}
 .btn-primary{background:var(--gold);color:#1a1a1a;text-transform:uppercase;letter-spacing:.4px;}
@@ -104,16 +104,16 @@ footer h3{color:#fff;margin-bottom:8px;}
 }
 
 .hero-photo-wrap{position:absolute;top:0;right:0;bottom:0;width:66%;overflow:visible;z-index:1;}
-.hero-photo-wrap img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;z-index:2;transform:scale(1.15) translateX(6%);transform-origin:center;-webkit-mask-image:linear-gradient(100deg,transparent 0%,rgba(0,0,0,.06) 8%,rgba(0,0,0,.15) 16%,rgba(0,0,0,.28) 24%,rgba(0,0,0,.45) 32%,rgba(0,0,0,.65) 40%,rgba(0,0,0,.85) 46%,#000 54%,#000 100%);mask-image:linear-gradient(100deg,transparent 0%,rgba(0,0,0,.06) 8%,rgba(0,0,0,.15) 16%,rgba(0,0,0,.28) 24%,rgba(0,0,0,.45) 32%,rgba(0,0,0,.65) 40%,rgba(0,0,0,.85) 46%,#000 54%,#000 100%);}
+.hero-photo-wrap img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;z-index:2;transform:scale(1.15) translateX(6%);transform-origin:center;filter:saturate(1.28) contrast(1.12) brightness(1.32);-webkit-mask-image:linear-gradient(100deg,transparent 0%,rgba(0,0,0,.06) 8%,rgba(0,0,0,.15) 16%,rgba(0,0,0,.28) 24%,rgba(0,0,0,.45) 32%,rgba(0,0,0,.65) 40%,rgba(0,0,0,.85) 46%,#000 54%,#000 100%);mask-image:linear-gradient(100deg,transparent 0%,rgba(0,0,0,.06) 8%,rgba(0,0,0,.15) 16%,rgba(0,0,0,.28) 24%,rgba(0,0,0,.45) 32%,rgba(0,0,0,.65) 40%,rgba(0,0,0,.85) 46%,#000 54%,#000 100%);}
 .hero-gold-edge{position:absolute;top:0;left:-7px;right:-7px;bottom:0;background:var(--gold);clip-path:url(#heroCurveClip);z-index:1;}
 .hero-photo-fade{position:absolute;top:0;left:0;bottom:0;width:58%;z-index:4;pointer-events:none;-webkit-mask-image:radial-gradient(ellipse 170px 330px at 364px 377px,transparent 0%,transparent 40%,black 90%,black 100%);mask-image:radial-gradient(ellipse 170px 330px at 364px 377px,transparent 0%,transparent 40%,black 90%,black 100%);background:linear-gradient(100deg,var(--navy) 0%,rgba(22,35,63,.9) 8%,rgba(22,35,63,.72) 16%,rgba(22,35,63,.52) 26%,rgba(22,35,63,.34) 36%,rgba(22,35,63,.18) 48%,rgba(22,35,63,.06) 60%,transparent 74%,transparent 100%);}
-.hero-photo-white-fade{position:absolute;top:0;left:0;bottom:0;width:74%;z-index:3;pointer-events:none;-webkit-mask-image:radial-gradient(ellipse 170px 330px at 364px 377px,transparent 0%,transparent 40%,black 90%,black 100%);mask-image:radial-gradient(ellipse 170px 330px at 364px 377px,transparent 0%,transparent 40%,black 90%,black 100%);background:linear-gradient(100deg,transparent 0%,transparent 22%,rgba(255,255,255,.06) 30%,rgba(255,255,255,.2) 38%,rgba(255,255,255,.28) 44%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.12) 58%,rgba(255,255,255,.05) 66%,transparent 76%,transparent 100%);}
+.hero-photo-white-fade{position:absolute;top:0;left:0;bottom:0;width:74%;z-index:3;pointer-events:none;-webkit-mask-image:radial-gradient(ellipse 170px 330px at 364px 377px,transparent 0%,transparent 40%,black 90%,black 100%);mask-image:radial-gradient(ellipse 170px 330px at 364px 377px,transparent 0%,transparent 40%,black 90%,black 100%);background:linear-gradient(100deg,transparent 0%,transparent 20%,rgba(255,255,255,.13) 28%,rgba(255,255,255,.32) 37%,rgba(255,255,255,.42) 44%,rgba(255,255,255,.34) 50%,rgba(255,255,255,.2) 58%,rgba(255,255,255,.09) 66%,transparent 76%,transparent 100%);}
   .hero-corner{position:absolute;right:0;bottom:0;width:40%;height:34%;background:linear-gradient(135deg,#16233f 0%,#0e1d3a 100%);clip-path:polygon(100% 0,100% 100%,0 100%);border-top:3px solid var(--gold);z-index:2;}
 .hero-corner-text{position:absolute;right:28px;bottom:22px;color:#fff;text-align:right;font-size:13px;z-index:3;max-width:260px;line-height:1.5;}
 .hero-corner-text span{display:block;color:var(--gold);font-weight:700;margin-bottom:4px;font-size:13px;letter-spacing:.5px;}
 .hero-text{position:relative;z-index:3;max-width:600px;padding:186px 0 60px;}
 .hero-features{display:flex;gap:26px;flex-wrap:wrap;}
-.hero-feature{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#fff;}
+.hero-feature{display:flex;align-items:center;gap:8px;font-size:17px;font-weight:600;color:#fff;}
 .hf-icon{width:20px;height:20px;color:var(--teal);flex-shrink:0;}
 .servicos-strip{background:var(--navy);padding:50px 0;}
 .ss-title{color:#fff;text-align:center;font-size:22px;letter-spacing:1px;text-transform:uppercase;margin-bottom:36px;font-weight:700;}
@@ -151,9 +151,9 @@ footer h3{color:#fff;margin-bottom:8px;}
       </div>
   <div class="container">
     <div class="hero-text">
-      <div class="eyebrow">Pintura Predial, Comercial e Residencial</div>
+      <div class="eyebrow">Pintura Predial</div>
       <h1>Mais que pintura, <span style="color:var(--teal)">valorização</span>.</h1>
-      <p class="loc">Revitalizamos fachadas e ambientes com qualidade, segurança e acabamento impecável.</p>
+      <p class="loc">Revitalizamos fachadas e ambientes com qualidade, segurança<br>e acabamento impecável.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="https://wa.me/5548985069328" target="_blank" rel="noopener">Solicitar Orçamento Gratuito
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-3px;margin-left:6px"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8 1-.2.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.2-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.4.1-.2 0-.3 0-.4-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.4 3.8 3.4.5.2.9.4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.3-.5 1.5-1 .2-.5.2-.9.1-1-.1-.1-.2-.2-.4-.3z"></path></svg>
