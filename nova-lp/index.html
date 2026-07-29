@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Harmonize Pinturas - Pintura Predial para Condomínios | Balneário Camboriú, Itapema e Região</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap">
 <style>
 :root{
   --navy:#16233f;
@@ -31,7 +33,7 @@ nav ul{display:flex;gap:28px;}
 nav ul li a{font-size:15px;font-weight:600;color:#fff;text-transform:uppercase;letter-spacing:.5px;}
 nav ul li a:hover{color:var(--teal);}
 .btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:700;font-size:14px;transition:.2s;}
-.btn-primary{background:var(--gold);color:#1a1a1a;text-transform:uppercase;letter-spacing:.4px;}
+.btn-primary{background:linear-gradient(135deg,#f3cd77,#d9ac4a);box-shadow:0 4px 16px rgba(230,180,80,.5),inset 0 1px 0 rgba(255,255,255,.4);color:#1a1a1a;text-transform:uppercase;letter-spacing:.4px;}
 .btn-primary:hover{opacity:.9;}
 .btn-outline{background:transparent;border:2px solid var(--teal);color:var(--teal);}
 .btn-teal{background:var(--teal);color:#fff;}
@@ -39,7 +41,7 @@ nav ul li a:hover{color:var(--teal);}
 .hero{position:relative;background:var(--navy);background-image:url('image.png');background-repeat:no-repeat;background-position:100% -40px;background-size:100%;color:#fff;overflow:hidden;margin-top:-116px;}
 .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;}
 .badge-pill{display:inline-block;background:rgba(42,157,143,.18);border:1px solid rgba(42,157,143,.5);color:#bfe9e2;padding:8px 16px;border-radius:30px;font-size:13px;font-weight:600;margin-bottom:20px;}
-.hero h1{font-size:36px;line-height:1.3;margin-bottom:18px;}
+.hero h1{font-size:30px;line-height:1.3;margin-bottom:18px;font-family:'Poppins',sans-serif;font-weight:700;}
 .hero p.loc{color:rgba(255,255,255,.75);margin-bottom:28px;font-size:15px;}
 .hero-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:32px;}
 .hero-img-ph{aspect-ratio:4/5;background:rgba(255,255,255,.06);border:2px dashed rgba(255,255,255,.25);color:#cfd6e2;}
@@ -115,6 +117,13 @@ footer h3{color:#fff;margin-bottom:8px;}
 .hero-features{display:flex;gap:26px;flex-wrap:wrap;}
 .hero-feature{display:flex;align-items:center;gap:8px;font-size:17px;font-weight:600;color:#fff;}
 .hf-icon{width:20px;height:20px;color:var(--teal);flex-shrink:0;}
+.hero-features-big{display:flex;gap:32px;flex-wrap:wrap;}
+.hero-feature-big{display:flex;align-items:center;gap:12px;}
+.hf-icon-circle{width:50px;height:50px;border-radius:50%;background:rgba(201,160,71,.15);border:2px solid rgba(201,160,71,.55);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.hf-icon-big{width:26px;height:26px;color:var(--gold);}
+.hf-text-big{display:flex;flex-direction:column;line-height:1.25;}
+.hf-text-big strong{font-size:16px;color:#fff;letter-spacing:.3px;}
+.hf-text-big span{font-size:13px;color:rgba(255,255,255,.75);}
 .servicos-strip{background:var(--navy);padding:50px 0;}
 .ss-title{color:#fff;text-align:center;font-size:22px;letter-spacing:1px;text-transform:uppercase;margin-bottom:36px;font-weight:700;}
 .ss-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;}
@@ -148,17 +157,26 @@ footer h3{color:#fff;margin-bottom:8px;}
   <div class="container">
     <div class="hero-text">
       <div class="eyebrow">Pintura Predial</div>
-      <h1>Mais que pintura, <span style="color:var(--teal)">valorização</span>.</h1>
-      <p class="loc">Revitalizamos fachadas e ambientes com qualidade, segurança<br>e acabamento impecável.</p>
+      <h1>Pintura predial para condomínios e edifícios comerciais em <span style="color:var(--gold)">Balneário Camboriú e região</span>.</h1>
+      <p class="loc">Transformamos fachadas desgastadas em empreendimentos mais valorizados, unindo planejamento, qualidade e segurança.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="https://wa.me/5548985069328" target="_blank" rel="noopener">Solicitar Orçamento Gratuito
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-3px;margin-left:6px"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8 1-.2.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.2-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.4.1-.2 0-.3 0-.4-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.4 3.8 3.4.5.2.9.4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.3-.5 1.5-1 .2-.5.2-.9.1-1-.1-.1-.2-.2-.4-.3z"></path></svg>
         </a>
       </div>
-      <div class="hero-features">
-        <div class="hero-feature"><svg class="hf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z"></path><path d="M9 12l2 2 4-4"></path></svg>Segurança em primeiro lugar</div>
-        <div class="hero-feature"><svg class="hf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="5"></circle><path d="M9 12.5L7 21l5-3 5 3-2-8.5"></path></svg>Acabamento de qualidade</div>
-        <div class="hero-feature"><svg class="hf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l4 2"></path></svg>Compromisso com prazos</div>
+      <div class="hero-features hero-features-big">
+        <div class="hero-feature-big">
+          <div class="hf-icon-circle">
+            <svg class="hf-icon-big" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z"></path><path d="M9 12l2 2 4-4"></path></svg>
+          </div>
+          <div class="hf-text-big"><strong>NR 35</strong><span>Trabalho em Altura</span></div>
+        </div>
+        <div class="hero-feature-big">
+          <div class="hf-icon-circle">
+            <svg class="hf-icon-big" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="5"></circle><path d="M9 12.5L7 21l5-3 5 3-2-8.5"></path></svg>
+          </div>
+          <div class="hf-text-big"><strong>ART</strong><span>Responsabilidade Técnica</span></div>
+        </div>
       </div>
     </div>
   </div>
