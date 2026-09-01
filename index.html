@@ -1052,9 +1052,11 @@ html, body { overflow-x: hidden !important; max-width: 100vw; }
 
 
 @media (max-width:900px) {
-  .hero { min-height: 108vh !important; } /* __HERO_MIN_HEIGHT__ */
+  .hero { min-height: 78vh !important; } /* __HERO_MIN_HEIGHT__ */
   #__mobile_hero_scrim { background: linear-gradient(rgba(2,27,85,.92) 0%, rgba(2,27,85,.86) 28%, rgba(2,27,85,.6) 46%, rgba(2,27,85,.22) 62%, rgba(2,27,85,.08) 100%) !important; } /* __SCRIM_OVERRIDE__ */
-  #__hero_bg_layer { background-size: auto 145% !important; background-position: 96% 0% !important; } /* __BG_ZOOM__ */
+  #__hero_bg_layer { background-size: cover !important; background-position: 70% center !important;
+
+Só essas duas alterações. } /* __BG_ZOOM__ */
 }
 </style></head>
 <body>
