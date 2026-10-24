@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://harmonizepinturas.com.br/sitemap.xml
